@@ -4,6 +4,11 @@
 
 void copy_string(char* destination_string, const char* original_string);
 
+/** This function works just like the POSIX 'strdup' function; it handles the
+ *  allocation of a large-enough buffer internally and calls the 'copy_string'
+ *  function to perform the actual copying of the data.
+ * 
+ */
 char* duplicate_string(const char* original);
 
 /** This function returns the length of the specified string. Unlike many
