@@ -12,6 +12,7 @@ typedef enum error_code_e {
  *  allows the error module to use internal linkage for all the error messages.
  * 
  */
+__attribute__((noreturn))
 void fatal_error(error_code_t error_code);
 
 #endif // PROJECT_INCLUDES_ERROR_H
