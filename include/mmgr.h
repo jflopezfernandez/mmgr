@@ -22,5 +22,7 @@
 enum { FALSE = 0, TRUE = !FALSE };
 #endif
 
-#endif // PROJECT_INCLUDES_MMGR_H
+#include "mem.h"
+#include "str.h"
 
+#endif // PROJECT_INCLUDES_MMGR_H

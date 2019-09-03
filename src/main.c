@@ -4,9 +4,10 @@
 int main(int argc, char **argv)
 {
     for (int i = 1; i < argc; ++i) {
-        printf("%s\n", argv[i]);
+        char* copy = duplicate_string(argv[i]);
+        printf("%s\n", copy);
+        free(copy);
     }
 
     return EXIT_SUCCESS;
 }
-
