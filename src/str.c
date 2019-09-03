@@ -16,6 +16,13 @@ char* duplicate_string(const char* original) {
     return duplicate;
 }
 
+/** This function returns the length of the specified string. Unlike many
+ *  'strlen' implementations, this implementation does not perform any kind of
+ *  word-aligned optimizations. It simply iterates through the string until
+ *  hitting the null-terminator, at which point it returns the number of
+ *  non-null bytes in the string, just as strlen would.
+ * 
+ */
 size_t string_length(const char* string) {
     size_t length = 0;
 
