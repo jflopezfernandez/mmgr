@@ -1,6 +1,13 @@
 
 #include "mmgr.h"
 
+/** This function is a re-implementation of the C standard library's strcpy
+ *  function. Notably, it iterates through the original string until hitting
+ *  the null-terminator, performing no checks on either buffer size. While this
+ *  does mean that Robert C. Seacord would frown upon me, a length-limited
+ *  copy function will be implemented Soon(tm).
+ * 
+ */
 void copy_string(char* destination_string, const char* original_string) {
     while ((*destination_string++ = *original_string++))
         ;
