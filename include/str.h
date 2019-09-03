@@ -9,6 +9,7 @@
  *  copy function will be implemented Soon(tm).
  * 
  */
+__attribute__((nonnull(1,2)))
 void copy_string(char* destination_string, const char* original_string);
 
 /** This function works just like the POSIX 'strdup' function; it handles the
@@ -16,6 +17,7 @@ void copy_string(char* destination_string, const char* original_string);
  *  function to perform the actual copying of the data.
  * 
  */
+__attribute__((returns_nonnull, nonnull(1)))
 char* duplicate_string(const char* original);
 
 /** This function returns the length of the specified string. Unlike many
@@ -25,6 +27,7 @@ char* duplicate_string(const char* original);
  *  non-null bytes in the string, just as strlen would.
  * 
  */
+__attribute__((nonnull(1)))
 size_t string_length(const char* string);
 
 #endif // PROJECT_INCLUDES_STR_H
