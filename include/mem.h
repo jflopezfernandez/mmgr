@@ -13,6 +13,7 @@
  *  successfully.
  * 
  */
+__attribute__((malloc, returns_nonnull, alloc_size(1)))
 void* allocate_memory(size_t size);
 
 #endif // PROJECT_INCLUDES_MEM_H

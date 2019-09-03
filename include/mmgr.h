@@ -22,6 +22,7 @@
 enum { FALSE = 0, TRUE = !FALSE };
 #endif
 
+#include "error.h"
 #include "mem.h"
 #include "str.h"
 
